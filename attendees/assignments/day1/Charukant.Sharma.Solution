@@ -1,0 +1,138 @@
+::Solution::
+
+>>> Assignment1:
+
+    > Initialize a directory as git repository.
+
+git init
+
+    > Create a blank files like a.txt, b.txt.
+
+touch a.txt, b.txt
+
+    > Write "Hi Team Ninja" into a.txt
+
+vi a.txt
+
+    > Write "This is VCS:Git" into b.txt
+
+    > Set git config variables.
+
+	Global gitconfig location
+
+		~/.gitconfig
+
+	Command to check local config
+
+	git config --local -e
+
+git config --global user.name "Charukant"
+git config --global user.email "charukant.sharma@mygurukulam.org"
+
+git config user.name "its4cs"
+git config user.email "39701966+its4cs@users.noreply.github.com"
+
+git config --global credential.helper cache
+
+git config --list
+
+git status
+
+    > Commit both files.
+
+git add .
+git commit -m "<some apt message>"
+git ls-files --stage
+
+    > Create a branch ninja			# git branch ninja
+    > Switch into branch ninja			# git checkout ninja
+
+git checkout -b ninja
+
+    > Update file b.txt with "This is VCS:Git. This is ninja branch"
+    > Check for the difference made in the file.
+
+git diff
+
+    > Commit your changes in ninja branch.
+
+git add .
+git commit -m "<some apt message>"
+git ls-files --stage
+
+    > Check difference between last two commits.
+
+git log
+
+    > Rename your file b.txt to c.txt
+
+mv b.txt c.txt
+
+    > Commit your changes.
+  
+git add .
+git commit -m "<some apt message>"
+
+    > Remove file c.txt.
+
+rm c.txt
+
+    > Commit your changes.
+
+git add .
+git commit -m "<some apt message>"
+
+    > Create a file text.txt and add it.
+
+touch text.txt
+git add text.txt
+
+    > Remove it from the staging area.
+
+git reset HEAD -- text.txt
+
+>>> Assignment2:
+
+    > Create a account on github.com.
+
+# command for commiting to GitHub
+git remote add origin https://github.com/its4cs/DevOpsNinjaAssignments.git
+git push -u origin master
+
+    > Fork ot-training/git repo into your account.
+
+https://github.com/ot-training/git.git
+
+    > Clone your remote repo into your machine.
+
+git clone https://github.com/its4cs/git.git
+
+>>> Assignment3:
+
+    > Clone your local repo into your machine.
+
+cd to a new location
+make a new dir
+git clone <path of local repo>
+
+    > Add a file to the attendees directory that describes you (ex. filename wouild be your name like saurabh.vajpayee.txt).
+
+cd into attendees directory
+vim charukant.sharma.txt 
+
+    > Commit your changes. Write a meaningful message like "Added information about YOUR NAME HERE."
+
+git add .
+git commit -m ""
+
+    > Save your changes into remote repo.
+
+git push -u origin master
+
+    > Check list of changes in your repo.
+
+DOne
+
+    > Add your name into attendees/assignments/day1/attendees.md
+
+Done
